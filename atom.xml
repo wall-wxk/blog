@@ -63,7 +63,7 @@
     <link href="https://wall-wxk.github.io/2017/02/14/sniffer/"/>
     <id>https://wall-wxk.github.io/2017/02/14/sniffer/</id>
     <published>2017-02-13T16:29:16.000Z</published>
-    <updated>2017-02-18T15:27:33.000Z</updated>
+    <updated>2017-02-18T15:47:19.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、热身——先看实战代码"><a href="#一、热身——先看实战代码" class="headerlink" title="一、热身——先看实战代码"></a>一、热身——先看实战代码</h2><blockquote>
 <p>a.js 文件</p>
@@ -136,10 +136,10 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
+      <category term="小作品" scheme="https://wall-wxk.github.io/categories/%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
     
-      <category term="小作品" scheme="https://wall-wxk.github.io/categories/JavaScript/%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
     
+      <category term="JavaScript" scheme="https://wall-wxk.github.io/tags/JavaScript/"/>
     
       <category term="sniffer.js" scheme="https://wall-wxk.github.io/tags/sniffer-js/"/>
     
@@ -150,7 +150,7 @@
     <link href="https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/"/>
     <id>https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/</id>
     <published>2017-02-12T16:46:14.000Z</published>
-    <updated>2017-02-18T15:27:28.000Z</updated>
+    <updated>2017-02-18T15:47:01.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、IIFE解释"><a href="#一、IIFE解释" class="headerlink" title="一、IIFE解释"></a>一、IIFE解释</h2><blockquote>
 <p>全拼Imdiately Invoked Function Expression，立即执行的函数表达式。</p>
@@ -204,12 +204,12 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
-    
-      <category term="模块化编程" scheme="https://wall-wxk.github.io/categories/JavaScript/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/"/>
+      <category term="模块化编程" scheme="https://wall-wxk.github.io/categories/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/"/>
     
     
       <category term="IIFE" scheme="https://wall-wxk.github.io/tags/IIFE/"/>
+    
+      <category term="JavaScript" scheme="https://wall-wxk.github.io/tags/JavaScript/"/>
     
   </entry>
   
@@ -218,7 +218,7 @@
     <link href="https://wall-wxk.github.io/2017/02/07/gfw/"/>
     <id>https://wall-wxk.github.io/2017/02/07/gfw/</id>
     <published>2017-02-07T14:01:24.000Z</published>
-    <updated>2017-02-18T15:27:44.000Z</updated>
+    <updated>2017-02-18T15:47:51.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、吐槽"><a href="#一、吐槽" class="headerlink" title="一、吐槽"></a>一、吐槽</h2><p> 在我大天朝做开发，最虐心的就是GFW。平时想上GitHub、Facebook、YouTube，看看外面“资本主义的腐朽”，都不给机会😂😂😂<br> 从最初的特定ip访问Google，到改host文件，再到使用红杏出墙（被封杀），到最后只能自己架设VPN。<br> 最近工信部出个文件，连个人都不能弄VPN了💔<br> 好！吐槽完了，说正事。。。</p>
 <h2 id="二、大杀器-Gaotizi"><a href="#二、大杀器-Gaotizi" class="headerlink" title="二、大杀器-Gaotizi"></a>二、大杀器-Gaotizi</h2><p> <a href="https://www.gaotizi.com/download.php" target="_blank" rel="external">Gaotizi</a>是一家目前算正常运营的网站（希望不要被封杀）。它提供了Mac os x、Windows、Android、iphone等多终端软件进行翻墙的服务。这个可比chrome翻墙插件强多了。<br> 以下是网站截图：</p>
@@ -270,7 +270,7 @@
     <link href="https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/"/>
     <id>https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/</id>
     <published>2017-02-05T15:00:04.000Z</published>
-    <updated>2017-02-18T15:26:50.000Z</updated>
+    <updated>2017-02-18T15:47:35.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、题目"><a href="#一、题目" class="headerlink" title="一、题目"></a>一、题目</h2><p> 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。</p>
 <h2 id="二、题目解析"><a href="#二、题目解析" class="headerlink" title="二、题目解析"></a>二、题目解析</h2><p> <strong>1.考察底层JavaScript基础</strong><br> 前端开发，日常最常接触的就是页面样式的编写。而摆脱jQuery等工具库，用原生js获取样式，是每个前端程序猿进阶阶段必须掌握的技能。</p>
@@ -300,10 +300,10 @@
     
     </summary>
     
-      <category term="CSS" scheme="https://wall-wxk.github.io/categories/CSS/"/>
+      <category term="面试题" scheme="https://wall-wxk.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
-      <category term="面试题" scheme="https://wall-wxk.github.io/categories/CSS/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
+      <category term="CSS" scheme="https://wall-wxk.github.io/tags/CSS/"/>
     
       <category term="微信" scheme="https://wall-wxk.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
     
@@ -314,7 +314,7 @@
     <link href="https://wall-wxk.github.io/2017/01/22/wx-lazyMan/"/>
     <id>https://wall-wxk.github.io/2017/01/22/wx-lazyMan/</id>
     <published>2017-01-22T14:56:36.000Z</published>
-    <updated>2017-02-18T15:27:08.000Z</updated>
+    <updated>2017-02-18T15:47:45.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、题目介绍"><a href="#一、题目介绍" class="headerlink" title="一、题目介绍"></a>一、题目介绍</h2><p> 以下是我copy自网上的面试题原文：</p>
 <blockquote>
@@ -366,12 +366,12 @@
     
     </summary>
     
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
-    
-      <category term="面试题" scheme="https://wall-wxk.github.io/categories/JavaScript/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+      <category term="面试题" scheme="https://wall-wxk.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
     
       <category term="微信" scheme="https://wall-wxk.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+      <category term="JavaScript" scheme="https://wall-wxk.github.io/tags/JavaScript/"/>
     
       <category term="lazyMan" scheme="https://wall-wxk.github.io/tags/lazyMan/"/>
     
@@ -449,7 +449,7 @@
     <link href="https://wall-wxk.github.io/2017/01/17/loadCss/"/>
     <id>https://wall-wxk.github.io/2017/01/17/loadCss/</id>
     <published>2017-01-17T14:40:54.000Z</published>
-    <updated>2017-02-18T15:39:04.000Z</updated>
+    <updated>2017-02-18T15:46:30.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一、方法引用来源和应用"><a href="#一、方法引用来源和应用" class="headerlink" title="一、方法引用来源和应用"></a>一、方法引用来源和应用</h3><p> 此动态加载css方法 loadCss，剥离自Sea.js，并做了进一步的优化（优化代码后续会进行分析）。<br> 因为公司项目需要用到懒加载来提高网站加载速度，所以将非首屏渲染必需的css文件进行动态加载操作。</p>
 <h3 id="二、优化后的完整代码"><a href="#二、优化后的完整代码" class="headerlink" title="二、优化后的完整代码"></a>二、优化后的完整代码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">* @function 动态加载css文件</div><div class="line">* @param &#123;string&#125; options.url -- css资源路径</div><div class="line">* @param &#123;function&#125; options.callback -- 加载后回调函数</div><div class="line">* @param &#123;string&#125; options.id -- link标签id</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadCss</span>(<span class="params">options</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> url = options.url,</div><div class="line">		callback = <span class="keyword">typeof</span> options.callback == <span class="string">"function"</span> ? options.callback : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,</div><div class="line">		id = options.id,</div><div class="line">		node = <span class="built_in">document</span>.createElement(<span class="string">"link"</span>),</div><div class="line">		supportOnload = <span class="string">"onload"</span> <span class="keyword">in</span> node,</div><div class="line">		isOldWebKit = +navigator.userAgent.replace(<span class="regexp">/.*(?:AppleWebKit|AndroidWebKit)\/?(\d+).*/i</span>, <span class="string">"$1"</span>) &lt; <span class="number">536</span>, <span class="comment">// webkit旧内核做特殊处理</span></div><div class="line">		protectNum = <span class="number">300000</span>; <span class="comment">// 阈值10分钟，一秒钟执行pollCss 500次</span></div><div class="line">		</div><div class="line">	node.rel = <span class="string">"stylesheet"</span>;</div><div class="line">    node.type = <span class="string">"text/css"</span>;</div><div class="line">	node.href = url;</div><div class="line">	<span class="keyword">if</span>( <span class="keyword">typeof</span> id !== <span class="string">"undefined"</span> )&#123;</div><div class="line">		node.id = id;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">document</span>.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(node);</div><div class="line">	</div><div class="line">	<span class="comment">// for Old WebKit and Old Firefox</span></div><div class="line">	<span class="keyword">if</span> (isOldWebKit || !supportOnload) &#123;</div><div class="line">		<span class="comment">// Begin after node insertion</span></div><div class="line">		setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			pollCss(node, callback, <span class="number">0</span>);</div><div class="line">		&#125;, <span class="number">1</span>);</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">if</span>(supportOnload)&#123;</div><div class="line">		node.onload = onload;</div><div class="line">		node.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="comment">// 加载失败(404)</span></div><div class="line">			onload();</div><div class="line">		&#125;</div><div class="line">	&#125;<span class="keyword">else</span>&#123;</div><div class="line">		node.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="keyword">if</span> (<span class="regexp">/loaded|complete/</span>.test(node.readyState)) &#123;</div><div class="line">				onload();</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">onload</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="comment">// 确保只跑一次下载操作</span></div><div class="line">		node.onload = node.onerror = node.onreadystatechange = <span class="literal">null</span>;</div><div class="line"></div><div class="line">		<span class="comment">// 清空node引用，在低版本IE，不清除会造成内存泄露</span></div><div class="line">		node = <span class="literal">null</span>;</div><div class="line"></div><div class="line">		callback();</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">// 循环判断css是否已加载成功</span></div><div class="line">	<span class="comment">/*</span></div><div class="line">	* @param node -- link节点</div><div class="line">	* @param callback -- 回调函数</div><div class="line">	* @param step -- 计步器，避免无限循环</div><div class="line">	*/</div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">pollCss</span>(<span class="params">node, callback, step</span>)</span>&#123;</div><div class="line">		<span class="keyword">var</span> sheet = node.sheet,</div><div class="line">			isLoaded;</div><div class="line">			</div><div class="line">		step += <span class="number">1</span>;</div><div class="line">		</div><div class="line">		<span class="comment">// 保护，大于10分钟，则不再轮询</span></div><div class="line">		<span class="keyword">if</span>(step &gt; protectNum)&#123;</div><div class="line">			isLoaded = <span class="literal">true</span>;</div><div class="line">			</div><div class="line">			<span class="comment">// 清空node引用</span></div><div class="line">			node = <span class="literal">null</span>;</div><div class="line">			</div><div class="line">			callback();</div><div class="line">			<span class="keyword">return</span>;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">if</span>(isOldWebKit)&#123;</div><div class="line">			<span class="comment">// for WebKit &lt; 536</span></div><div class="line">			<span class="keyword">if</span>(sheet)&#123;</div><div class="line">				isLoaded = <span class="literal">true</span>;</div><div class="line">			&#125;</div><div class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(sheet)&#123;</div><div class="line">			<span class="comment">// for Firefox &lt; 9.0</span></div><div class="line">			<span class="keyword">try</span>&#123;</div><div class="line">				<span class="keyword">if</span>(sheet.cssRules)&#123;</div><div class="line">					isLoaded = <span class="literal">true</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;<span class="keyword">catch</span>(ex)&#123;</div><div class="line">				<span class="comment">// 火狐特殊版本，通过特定值获知是否下载成功</span></div><div class="line">				<span class="comment">// The value of `ex.name` is changed from "NS_ERROR_DOM_SECURITY_ERR"</span></div><div class="line">				<span class="comment">// to "SecurityError" since Firefox 13.0. But Firefox is less than 9.0</span></div><div class="line">				<span class="comment">// in here, So it is ok to just rely on "NS_ERROR_DOM_SECURITY_ERR"</span></div><div class="line">				<span class="keyword">if</span>(ex.name === <span class="string">"NS_ERROR_DOM_SECURITY_ERR"</span>)&#123;</div><div class="line">					isLoaded = <span class="literal">true</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="keyword">if</span>(isLoaded)&#123;</div><div class="line">				<span class="comment">// 延迟20ms是为了给下载的样式留够渲染的时间</span></div><div class="line">				callback();</div><div class="line">			&#125;<span class="keyword">else</span>&#123;</div><div class="line">				pollCss(node, callback, step);</div><div class="line">			&#125;</div><div class="line">		&#125;, <span class="number">20</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -487,8 +487,8 @@
     
       <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
     
-      <category term="CSS" scheme="https://wall-wxk.github.io/categories/JavaScript/CSS/"/>
     
+      <category term="CSS" scheme="https://wall-wxk.github.io/tags/CSS/"/>
     
       <category term="loadCss" scheme="https://wall-wxk.github.io/tags/loadCss/"/>
     
