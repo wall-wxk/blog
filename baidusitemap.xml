@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>https://wall-wxk.github.io/2017/01/18/localStorage/</loc>
-    <lastmod>2017-02-18T14:54:52.000Z</lastmod>
+    <loc>https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/</loc>
+    <lastmod>2017-02-18T14:56:33.000Z</lastmod>
     <data>
         <display>
-        <title>localStorage的黑科技-js和css缓存机制</title>
-        <pubTime>2017-01-18T12:30:36.000Z</pubTime>
+        <title>javascript模块化编程-详解立即执行函数表达式IIFE</title>
+        <pubTime>2017-02-12T16:46:14.000Z</pubTime>
         
         <tag>IIFE</tag>
          
@@ -27,15 +27,22 @@
 
     
   <url>
-    <loc>https://wall-wxk.github.io/2017/02/18/moduleJs-IIFE/</loc>
-    <lastmod>2017-02-18T14:53:14.000Z</lastmod>
+    <loc>https://wall-wxk.github.io/2017/01/18/localStorage/</loc>
+    <lastmod>2017-02-18T14:56:02.000Z</lastmod>
     <data>
         <display>
-        <title>moduleJs-IIFE</title>
-        <pubTime>2017-02-18T14:53:14.000Z</pubTime>
+        <title>localStorage的黑科技-js和css缓存机制</title>
+        <pubTime>2017-01-18T12:30:36.000Z</pubTime>
         
+        <tag>微信</tag>
+         
+        <tag>localStorage</tag>
+         
          
            
+             
+              <breadCrumb title="JavaScript" url="https://wall-wxk.github.io/categories/JavaScript/"/>
+          
         </display>
     </data>
     </url>
