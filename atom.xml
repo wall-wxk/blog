@@ -150,7 +150,7 @@
     <link href="https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/"/>
     <id>https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/</id>
     <published>2017-02-12T16:46:14.000Z</published>
-    <updated>2017-02-18T14:56:33.000Z</updated>
+    <updated>2017-02-18T15:00:57.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、IIFE解释"><a href="#一、IIFE解释" class="headerlink" title="一、IIFE解释"></a>一、IIFE解释</h2><blockquote>
 <p>全拼Imdiately Invoked Function Expression，立即执行的函数表达式。</p>
@@ -218,7 +218,7 @@
     <link href="https://wall-wxk.github.io/2017/01/18/localStorage/"/>
     <id>https://wall-wxk.github.io/2017/01/18/localStorage/</id>
     <published>2017-01-18T12:30:36.000Z</published>
-    <updated>2017-02-18T14:56:02.000Z</updated>
+    <updated>2017-02-18T15:00:49.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、发现黑科技的起因"><a href="#一、发现黑科技的起因" class="headerlink" title="一、发现黑科技的起因"></a>一、发现黑科技的起因</h2><p> 今天在微信公众号看到一篇技术博文，想用印象笔记收藏，所以发送了文章链接到pc上。然后习惯性地打开控制台，看看源码，想了解下最近微信用了什么新技术。<br> 呵呵，以下勾起了我侦探的欲望。页面加载后的异常点就是只加载了一个js，如下图所示：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/4118463-b2ba6f7903ae5373.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
