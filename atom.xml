@@ -214,6 +214,100 @@
   </entry>
   
   <entry>
+    <title>福利贴-教你如何优雅地科学上网</title>
+    <link href="https://wall-wxk.github.io/2017/02/07/gfw/"/>
+    <id>https://wall-wxk.github.io/2017/02/07/gfw/</id>
+    <published>2017-02-07T14:01:24.000Z</published>
+    <updated>2017-02-18T15:08:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、吐槽"><a href="#一、吐槽" class="headerlink" title="一、吐槽"></a>一、吐槽</h2><p> 在我大天朝做开发，最虐心的就是GFW。平时想上GitHub、Facebook、YouTube，看看外面“资本主义的腐朽”，都不给机会😂😂😂<br> 从最初的特定ip访问Google，到改host文件，再到使用红杏出墙（被封杀），到最后只能自己架设VPN。<br> 最近工信部出个文件，连个人都不能弄VPN了💔<br> 好！吐槽完了，说正事。。。</p>
+<h2 id="二、大杀器-Gaotizi"><a href="#二、大杀器-Gaotizi" class="headerlink" title="二、大杀器-Gaotizi"></a>二、大杀器-Gaotizi</h2><p> <a href="https://www.gaotizi.com/download.php" target="_blank" rel="external">Gaotizi</a>是一家目前算正常运营的网站（希望不要被封杀）。它提供了Mac os x、Windows、Android、iphone等多终端软件进行翻墙的服务。这个可比chrome翻墙插件强多了。<br> 以下是网站截图：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-44bab2662347be8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="高梯子"></p>
+<p> 它提供的服务，直白点说：就是把VPN资源卖给你使用。</p>
+<h2 id="三、MAC-使用体验展示"><a href="#三、MAC-使用体验展示" class="headerlink" title="三、MAC 使用体验展示"></a>三、MAC 使用体验展示</h2><p> <strong>3.1 下载软件并安装</strong></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-02584835f1e3416a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p> 安装双击打开，可以看到屏幕右上角出现纸飞机图标</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-e9f6f652d12fdbdc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p> <strong>3.2 配置服务器</strong></p>
+<p> 登陆Gaotizi网站，进入产品服务列表，找到购买的服务。我这里是购买了季付计划。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-57c6b3b968057aea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Gaotizi"></p>
+<p> 点击二维码按钮，弹出弹窗</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-343d90d6d5e940f7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="二维码"></p>
+<p> 点击允许，则会自动添加服务器配置信息到shadowsocks。点击确定即可。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-a5540cadb6ad48dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置信息"></p>
+<p> <strong>3.3 激动时刻</strong></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-0f663c63a8e20d70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Google"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-88bda625c48bbc4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="GitHub"></p>
+<p> 成功访问谷歌、GitHub😆</p>
+<h2 id="四、手机翻墙"><a href="#四、手机翻墙" class="headerlink" title="四、手机翻墙"></a>四、手机翻墙</h2><p> 手机翻墙软件，我使用的是Wingy</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-37b0c1845726f607.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Wingy"></p>
+<p> 打开Wingy APP，然后点击左上角 + 号，进入以下页面</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-956d424d23e77ec6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="扫描二维码"></p>
+<p> 然后选择“扫描二维码”，扫一扫Gaotizi提供的二维码，就可以连接上VPN了</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-cfba3908bde2af00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<p> 打开YouTube，妥妥滴~</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-b31cd2f057c6011c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="YouTube"></p>
+<h2 id="五、收费情况"><a href="#五、收费情况" class="headerlink" title="五、收费情况"></a>五、收费情况</h2><p><img src="http://upload-images.jianshu.io/upload_images/4118463-be4ddc01e36c4568.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="收费情况"></p>
+<p> 我选择的是季付计划，30G流量，可以三台设备使用，80块钱，挺值！</p>
+<p> 最后，附上<a href="https://www.gaotizi.com" target="_blank" rel="external">传送门</a>：<code>https://www.gaotizi.com</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、吐槽&quot;&gt;&lt;a href=&quot;#一、吐槽&quot; class=&quot;headerlink&quot; title=&quot;一、吐槽&quot;&gt;&lt;/a&gt;一、吐槽&lt;/h2&gt;&lt;p&gt; 在我大天朝做开发，最虐心的就是GFW。平时想上GitHub、Facebook、YouTube，看看外面“资本主义的腐朽”，
+    
+    </summary>
+    
+      <category term="其他" scheme="https://wall-wxk.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="gfw" scheme="https://wall-wxk.github.io/tags/gfw/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信面试题-获取元素的最终background-color</title>
+    <link href="https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/"/>
+    <id>https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/</id>
+    <published>2017-02-05T15:00:04.000Z</published>
+    <updated>2017-02-18T15:11:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、题目"><a href="#一、题目" class="headerlink" title="一、题目"></a>一、题目</h2><p> 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。</p>
+<h2 id="二、题目解析"><a href="#二、题目解析" class="headerlink" title="二、题目解析"></a>二、题目解析</h2><p> <strong>1.考察底层JavaScript基础</strong><br> 前端开发，日常最常接触的就是页面样式的编写。而摆脱jQuery等工具库，用原生js获取样式，是每个前端程序猿进阶阶段必须掌握的技能。</p>
+<p> <strong>2.考察面试者的思维缜密程度和开发经验</strong><br> 如果认为单单求元素计算后的样式，就有点too young了。页面的样式的复杂，永远是最虐心的。就算前端有多牛逼，一听到兼容IE6，论谁都会心塞😓。所以还要考虑特殊的情况：<code>display，opacity，visibility</code>的取值。</p>
+<h2 id="三、理论基础"><a href="#三、理论基础" class="headerlink" title="三、理论基础"></a>三、理论基础</h2><p> <strong>1. 内联样式</strong><br> 内联样式可以通过元素的style属性获取，如果style属性有background-color值，则可以直接获取出来 (暂不考虑!important) 。</p>
+<p> <strong>2. 外联的层叠样式</strong><br> DOM2样式规范在<code>document.defaultView</code>中包含了一个<code>getComputedStyle()</code>方法。该方法返回一个只读的CSSStyleDeclaration对象，其中包含特定元素的所有计算样式。</p>
+<h2 id="四、解题"><a href="#四、解题" class="headerlink" title="四、解题"></a>四、解题</h2><p><strong>4.1 将所有工具方法封装在WDS(wall dom script)命名空间中</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">WDS, undefined</span>)</span>&#123;</div><div class="line">  <span class="comment">// 封装代码...</span></div><div class="line">&#125;)(<span class="built_in">window</span>.WDS || (<span class="built_in">window</span>.WDS = &#123;&#125;));</div></pre></td></tr></table></figure></p>
+<p> 代码封装在命名空间里，不会造成无意间的代码污染。</p>
+<p><strong>4.2 工具方法camelize</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 字符串转换为驼峰写法</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">camelize</span>(<span class="params">str</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> str.replace(<span class="regexp">/-(\w)/g</span>, <span class="function"><span class="keyword">function</span> (<span class="params">strMatch, p1</span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> p1.toUpperCase();</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p> 该方法是为了方便后续<code>getStyle()</code>方法的编写，而独立出来的。<br> 作用是将连字符类的css属性值，转换成驼峰写法。<br> 例如：将background-color转换为backgroundColor</p>
+<p><strong>4.3 获取特定元素的计算样式</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取元素计算后的样式</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getStyle</span>(<span class="params">elem, property</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(!elem || !property)&#123;</div><div class="line">		<span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">var</span> value = elem.style[camelize(property)], <span class="comment">// 先获取是否有内联样式</span></div><div class="line">		css; <span class="comment">// 获取的所有计算样式</span></div><div class="line"></div><div class="line">	<span class="comment">// 无内联样式，则获取层叠样式表计算后的样式</span></div><div class="line">	<span class="keyword">if</span>(!value)&#123;</div><div class="line">		<span class="keyword">if</span>(<span class="built_in">document</span>.defaultView &amp;&amp; <span class="built_in">document</span>.defaultView.getComputedStyle)&#123;</div><div class="line">			css = <span class="built_in">document</span>.defaultView.getComputedStyle(elem, <span class="literal">null</span>);</div><div class="line">			value = css ? css.getPropertyValue(property) : <span class="literal">null</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">return</span> value;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p> 做到这一步，第一个考察点基本就满足了。也能获知面试者是否具备足够扎实的js基础。<br> 另外，像安全保护性的判断<code>if(!elem || !property)</code>和功能嗅探<code>if(document.defaultView &amp;&amp; document.defaultView.getComputedStyle)</code>，都能很好地体现开发者的代码逻辑和开发经验。</p>
+<p><strong>4.4 排除特殊情况</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 检测获取的背景色是否有效</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkBgValue</span>(<span class="params">elem</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> value = getStyle(elem, <span class="string">'background-color'</span>),</div><div class="line">		hasColor = value ? <span class="literal">true</span> : <span class="literal">false</span>; <span class="comment">// 是否有颜色</span></div><div class="line"></div><div class="line">	<span class="comment">// 排除特殊情况</span></div><div class="line">	<span class="keyword">if</span>(value == <span class="string">"transparent"</span> || value == <span class="string">"rgba(0, 0, 0, 0)"</span>)&#123;</div><div class="line">		<span class="comment">// 未设置background-color，或者设置为跟随父节点</span></div><div class="line">		hasColor = <span class="literal">false</span>;</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(getStyle(elem, <span class="string">'opacity'</span>) == <span class="string">"0"</span>)&#123;</div><div class="line">		<span class="comment">// dom节点透明度为全透明</span></div><div class="line">		hasColor = <span class="literal">false</span>;</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(getStyle(elem, <span class="string">'visibility'</span>) == <span class="string">"hidden"</span>)&#123;</div><div class="line">		<span class="comment">// dom节点不可见</span></div><div class="line">		hasColor = <span class="literal">false</span>;</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(getStyle(elem, <span class="string">'display'</span>) == <span class="string">"none"</span>)&#123;</div><div class="line">		<span class="comment">// dom节点不可见</span></div><div class="line">		hasColor = <span class="literal">false</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">return</span> hasColor;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong>4.5 获取div在页面最终显示的颜色</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取div最终显示的颜色</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRealBg</span>(<span class="params">elem</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(checkBgValue(elem))&#123;</div><div class="line">		<span class="keyword">return</span> getStyle(elem, <span class="string">'background-color'</span>);</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(elem != <span class="built_in">document</span>.documentElement)&#123;</div><div class="line">		<span class="keyword">return</span> getRealBg(elem.parentNode);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">return</span> <span class="string">''</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p> 获取样式值采用递归方式处理。<br> 如果能顺利获取到元素样式，且不触发<code>4.4 排除特殊情况</code>中的一种，则直接返回结果。<br> 触发了特殊情况，则需要查找父节点以及更上层的节点的样式，来获取肉眼能看到，显示在页面上的background-color值。<br> 在向上回溯的过程中，如果已经回溯到<code>html</code>根节点，则可以停止回溯。所以加了判断<code>else if(elem != document.documentElement)</code></p>
+<h2 id="五、遗漏的大boss"><a href="#五、遗漏的大boss" class="headerlink" title="五、遗漏的大boss"></a>五、遗漏的大boss</h2><p><strong>5.1 大boss !important</strong><br> 如果乱用 <code>!important</code>，对大型项目的维护和开发，绝对是一场噩梦。因为优先级规则的计算，<code>!important</code>永远处在食物链的最顶层。<br> 当前题目不考虑这种情况，也是我的偷懒😆。确实很棘手，就不写这个逻辑分支的代码了。这里提醒一下~</p>
+<p><strong>5.2 大boss 父节点及根节点设置了不可见css属性</strong><br> 只要设置该css语句：<code>html {display:none;}</code>，页面所有元素立刻消失不见。而任意特定元素的上级节点，只要设置了 <code>opacity,display,visibility</code>，判断逻辑瞬间变得复杂起来。所以，这个浑水我也不趟 O(∩_∩)O哈哈~</p>
+<h2 id="六、改进的点"><a href="#六、改进的点" class="headerlink" title="六、改进的点"></a>六、改进的点</h2><p> 其实特殊情况排除的判断，我偷懒没做到最好——rgb颜色值和特定颜色值(比如red)没有进行统一的转换，只是加了生硬的判断<code>if(value == &quot;transparent&quot; || value == &quot;rgba(0, 0, 0, 0)&quot;)</code>。<br> 有兴趣的可以搜索下颜色值转换的js方法，这里我就不写了。</p>
+<h2 id="七、源码和demo"><a href="#七、源码和demo" class="headerlink" title="七、源码和demo"></a>七、源码和demo</h2><p><a href="https://github.com/wall-wxk/blogDemo/blob/master/2017/02/05/getStyle.html" target="_blank" rel="external">源码地址</a>：<code>https://github.com/wall-wxk/blogDemo/blob/master/2017/02/05/getStyle.html</code><br><a href="https://wall-wxk.github.io/blogDemo/2017/02/05/getStyle.html">demo</a>：<code>https://wall-wxk.github.io/blogDemo/2017/02/05/getStyle.html</code></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/4118463-ff57104dab5b90e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p> 谢谢@<a href="http://www.jianshu.com/u/a3187c2973b1" target="_blank" rel="external">烟雨雾岚</a> 的提醒的新思路：canvas截图+Js获取图片某点颜色，这样可以完美解决所有的问题。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、题目&quot;&gt;&lt;a href=&quot;#一、题目&quot; class=&quot;headerlink&quot; title=&quot;一、题目&quot;&gt;&lt;/a&gt;一、题目&lt;/h2&gt;&lt;p&gt; 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="面试题" scheme="https://wall-wxk.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+    
+      <category term="微信" scheme="https://wall-wxk.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>localStorage的黑科技-js和css缓存机制</title>
     <link href="https://wall-wxk.github.io/2017/01/18/localStorage/"/>
     <id>https://wall-wxk.github.io/2017/01/18/localStorage/</id>
