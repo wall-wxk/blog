@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>wall&#39;s blog</title>
-  <subtitle>努力向上</subtitle>
-  <link href="/atom.xml" rel="self"/>
+<search>
   
-  <link href="https://wall-wxk.github.io/"/>
-  <updated>2017-02-18T15:27:38.000Z</updated>
-  <id>https://wall-wxk.github.io/</id>
   
-  <author>
-    <name>wall</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>JavaScript函数节流和函数防抖之间的区别</title>
-    <link href="https://wall-wxk.github.io/2017/02/15/throttleAndDebounce/"/>
-    <id>https://wall-wxk.github.io/2017/02/15/throttleAndDebounce/</id>
-    <published>2017-02-14T23:15:35.000Z</published>
-    <updated>2017-02-18T15:27:38.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、概念解释"><a href="#一、概念解释" class="headerlink" title="一、概念解释"></a>一、概念解释</h2><p> 函数节流和函数防抖，两者都是优化高频率执行js代码的一种手段。<br> 大家大概都知道旧款电视机的工作原理，就是一行行得扫描出色彩到屏幕上，然后组成一张张图片。由于肉眼只能分辨出一定频率的变化，当高频率的扫描，人类是感觉不出来的。反而形成一种视觉效果，就是一张图。就像高速旋转的风扇，你看不到扇叶，只看到了一个圆一样。<br> 同理，可以类推到js代码。在一定时间内，代码执行的次数不一定要非常多。达到一定频率就足够了。因为跑得越多，带来的效果也是一样。倒不如，把js代码的执行次数控制在合理的范围。既能节省浏览器CPU资源，又能让页面浏览更加顺畅，不会因为js的执行而发生卡顿。这就是函数节流和函数防抖要做的事。</p>
+    <entry>
+      <title><![CDATA[JavaScript函数节流和函数防抖之间的区别]]></title>
+      <url>https://wall-wxk.github.io/2017/02/15/throttleAndDebounce/</url>
+      <content type="html"><![CDATA[<h2 id="一、概念解释"><a href="#一、概念解释" class="headerlink" title="一、概念解释"></a>一、概念解释</h2><p> 函数节流和函数防抖，两者都是优化高频率执行js代码的一种手段。<br> 大家大概都知道旧款电视机的工作原理，就是一行行得扫描出色彩到屏幕上，然后组成一张张图片。由于肉眼只能分辨出一定频率的变化，当高频率的扫描，人类是感觉不出来的。反而形成一种视觉效果，就是一张图。就像高速旋转的风扇，你看不到扇叶，只看到了一个圆一样。<br> 同理，可以类推到js代码。在一定时间内，代码执行的次数不一定要非常多。达到一定频率就足够了。因为跑得越多，带来的效果也是一样。倒不如，把js代码的执行次数控制在合理的范围。既能节省浏览器CPU资源，又能让页面浏览更加顺畅，不会因为js的执行而发生卡顿。这就是函数节流和函数防抖要做的事。</p>
 <p> <strong>函数节流</strong>是指一定时间内js方法只跑一次。比如人的眨眼睛，就是一定时间内眨一次。这是函数节流最形象的解释。<br> <strong>函数防抖</strong>是指频繁触发的情况下，只有足够的空闲时间，才执行代码一次。比如生活中的坐公交，就是一定时间内，如果有人陆续刷卡上车，司机就不会开车。只有别人没刷卡了，司机才开车。</p>
 <h2 id="二、函数节流"><a href="#二、函数节流" class="headerlink" title="二、函数节流"></a>二、函数节流</h2><p> 函数节流应用的实际场景，多数在监听页面元素滚动事件的时候会用到。因为滚动事件，是一个高频触发的事件。以下是监听页面元素滚动的示例代码：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 函数节流</span></div><div class="line"><span class="keyword">var</span> canRun = <span class="literal">true</span>;</div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"throttle"</span>).onscroll = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(!canRun)&#123;</div><div class="line">		<span class="comment">// 判断是否已空闲，如果在执行中，则直接return</span></div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	canRun = <span class="literal">false</span>;</div><div class="line">	setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(<span class="string">"函数节流"</span>);</div><div class="line">		canRun = <span class="literal">true</span>;</div><div class="line">	&#125;, <span class="number">300</span>);</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
@@ -42,30 +26,28 @@
 <p> 这是我写的一个测试demo，把鼠标移动到模块上方，滚动滚轮，即可在控制台查看输出效果。</p>
 <p> <a href="https://wall-wxk.github.io/blogDemo/2017/02/15/throttleAndDebounce.html">demo地址</a>：<code>https://wall-wxk.github.io/blogDemo/2017/02/15/throttleAndDebounce.html</code></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> JavaScript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> throttle </tag>
+            
+            <tag> debounce </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、概念解释&quot;&gt;&lt;a href=&quot;#一、概念解释&quot; class=&quot;headerlink&quot; title=&quot;一、概念解释&quot;&gt;&lt;/a&gt;一、概念解释&lt;/h2&gt;&lt;p&gt; 函数节流和函数防抖，两者都是优化高频率执行js代码的一种手段。&lt;br&gt; 大家大概都知道旧款电视机的工作原理
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="throttle" scheme="https://wall-wxk.github.io/tags/throttle/"/>
-    
-      <category term="debounce" scheme="https://wall-wxk.github.io/tags/debounce/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript嗅探执行神器-sniffer.js，你值得拥有！</title>
-    <link href="https://wall-wxk.github.io/2017/02/14/sniffer/"/>
-    <id>https://wall-wxk.github.io/2017/02/14/sniffer/</id>
-    <published>2017-02-13T16:29:16.000Z</published>
-    <updated>2017-02-18T15:47:19.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、热身——先看实战代码"><a href="#一、热身——先看实战代码" class="headerlink" title="一、热身——先看实战代码"></a>一、热身——先看实战代码</h2><blockquote>
+    <entry>
+      <title><![CDATA[JavaScript嗅探执行神器-sniffer.js，你值得拥有！]]></title>
+      <url>https://wall-wxk.github.io/2017/02/14/sniffer/</url>
+      <content type="html"><![CDATA[<h2 id="一、热身——先看实战代码"><a href="#一、热身——先看实战代码" class="headerlink" title="一、热身——先看实战代码"></a>一、热身——先看实战代码</h2><blockquote>
 <p>a.js 文件</p>
 </blockquote>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 定义Wall及内部方法</span></div><div class="line">;(<span class="function"><span class="keyword">function</span>(<span class="params">window, FUNC, undefined</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> name = <span class="string">'wall'</span>;</div><div class="line"></div><div class="line">	Wall.say = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(<span class="string">'I\'m '</span>+ name +<span class="string">' !'</span>);</div><div class="line">	&#125;;</div><div class="line"></div><div class="line">	Wall.message = &#123;</div><div class="line">		<span class="attr">getName</span> : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			<span class="keyword">return</span> name;</div><div class="line">		&#125;,</div><div class="line">		<span class="attr">setName</span> : <span class="function"><span class="keyword">function</span>(<span class="params">firstName, secondName</span>)</span>&#123;</div><div class="line">			name = firstName+<span class="string">'-'</span>+secondName;</div><div class="line">		&#125;</div><div class="line">	&#125;;</div><div class="line">&#125;)(<span class="built_in">window</span>, <span class="built_in">window</span>.Wall || (<span class="built_in">window</span>.Wall = &#123;&#125;));</div></pre></td></tr></table></figure>
@@ -127,32 +109,28 @@
 <p> 可靠度方面，Sniffer.js使用在高流量的公司产品上，至今没有出现反馈任何兼容、或者性能问题。这方面也可以打包票！</p>
 <p> 最后，附上<a href="https://github.com/wall-wxk/sniffer/blob/master/sniffer.js" target="_blank" rel="external">源码地址</a>:<code>https://github.com/wall-wxk/sniffer/blob/master/sniffer.js</code></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 小作品 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> sniffer.js </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、热身——先看实战代码&quot;&gt;&lt;a href=&quot;#一、热身——先看实战代码&quot; class=&quot;headerlink&quot; title=&quot;一、热身——先看实战代码&quot;&gt;&lt;/a&gt;一、热身——先看实战代码&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;a.js 文件&lt;/p&gt;
-&lt;/blo
-    
-    </summary>
-    
-      <category term="小作品" scheme="https://wall-wxk.github.io/categories/%E5%B0%8F%E4%BD%9C%E5%93%81/"/>
-    
-    
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/tags/JavaScript/"/>
-    
-      <category term="sniffer.js" scheme="https://wall-wxk.github.io/tags/sniffer-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>javascript模块化编程-详解立即执行函数表达式IIFE</title>
-    <link href="https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/"/>
-    <id>https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/</id>
-    <published>2017-02-12T16:46:14.000Z</published>
-    <updated>2017-02-18T15:47:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、IIFE解释"><a href="#一、IIFE解释" class="headerlink" title="一、IIFE解释"></a>一、IIFE解释</h2><blockquote>
+    <entry>
+      <title><![CDATA[javascript模块化编程-详解立即执行函数表达式IIFE]]></title>
+      <url>https://wall-wxk.github.io/2017/02/13/moduleJs-IIFE/</url>
+      <content type="html"><![CDATA[<h2 id="一、IIFE解释"><a href="#一、IIFE解释" class="headerlink" title="一、IIFE解释"></a>一、IIFE解释</h2><blockquote>
 <p>全拼Imdiately Invoked Function Expression，立即执行的函数表达式。</p>
 </blockquote>
 <p> 像如下的代码所示，就是一个匿名立即执行函数:</p>
@@ -196,31 +174,28 @@
 <hr>
 <p> 觉得不错的，可以关注<code>模块化</code>这个系列的文章，容我后续码字，敬请期待！</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 模块化编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> IIFE </tag>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、IIFE解释&quot;&gt;&lt;a href=&quot;#一、IIFE解释&quot; class=&quot;headerlink&quot; title=&quot;一、IIFE解释&quot;&gt;&lt;/a&gt;一、IIFE解释&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;全拼Imdiately Invoked Function Expr
-    
-    </summary>
-    
-      <category term="模块化编程" scheme="https://wall-wxk.github.io/categories/%E6%A8%A1%E5%9D%97%E5%8C%96%E7%BC%96%E7%A8%8B/"/>
-    
-    
-      <category term="IIFE" scheme="https://wall-wxk.github.io/tags/IIFE/"/>
-    
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>福利贴-教你如何优雅地科学上网</title>
-    <link href="https://wall-wxk.github.io/2017/02/07/gfw/"/>
-    <id>https://wall-wxk.github.io/2017/02/07/gfw/</id>
-    <published>2017-02-07T14:01:24.000Z</published>
-    <updated>2017-02-18T15:47:51.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、吐槽"><a href="#一、吐槽" class="headerlink" title="一、吐槽"></a>一、吐槽</h2><p> 在我大天朝做开发，最虐心的就是GFW。平时想上GitHub、Facebook、YouTube，看看外面“资本主义的腐朽”，都不给机会😂😂😂<br> 从最初的特定ip访问Google，到改host文件，再到使用红杏出墙（被封杀），到最后只能自己架设VPN。<br> 最近工信部出个文件，连个人都不能弄VPN了💔<br> 好！吐槽完了，说正事。。。</p>
+    <entry>
+      <title><![CDATA[福利贴-教你如何优雅地科学上网]]></title>
+      <url>https://wall-wxk.github.io/2017/02/07/gfw/</url>
+      <content type="html"><![CDATA[<h2 id="一、吐槽"><a href="#一、吐槽" class="headerlink" title="一、吐槽"></a>一、吐槽</h2><p> 在我大天朝做开发，最虐心的就是GFW。平时想上GitHub、Facebook、YouTube，看看外面“资本主义的腐朽”，都不给机会😂😂😂<br> 从最初的特定ip访问Google，到改host文件，再到使用红杏出墙（被封杀），到最后只能自己架设VPN。<br> 最近工信部出个文件，连个人都不能弄VPN了💔<br> 好！吐槽完了，说正事。。。</p>
 <h2 id="二、大杀器-Gaotizi"><a href="#二、大杀器-Gaotizi" class="headerlink" title="二、大杀器-Gaotizi"></a>二、大杀器-Gaotizi</h2><p> <a href="https://www.gaotizi.com/download.php" target="_blank" rel="external">Gaotizi</a>是一家目前算正常运营的网站（希望不要被封杀）。它提供了Mac os x、Windows、Android、iphone等多终端软件进行翻墙的服务。这个可比chrome翻墙插件强多了。<br> 以下是网站截图：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/4118463-44bab2662347be8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="高梯子"></p>
 <p> 它提供的服务，直白点说：就是把VPN资源卖给你使用。</p>
@@ -251,28 +226,26 @@
 <p> 我选择的是季付计划，30G流量，可以三台设备使用，80块钱，挺值！</p>
 <p> 最后，附上<a href="https://www.gaotizi.com" target="_blank" rel="external">传送门</a>：<code>https://www.gaotizi.com</code></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 其他 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> gfw </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、吐槽&quot;&gt;&lt;a href=&quot;#一、吐槽&quot; class=&quot;headerlink&quot; title=&quot;一、吐槽&quot;&gt;&lt;/a&gt;一、吐槽&lt;/h2&gt;&lt;p&gt; 在我大天朝做开发，最虐心的就是GFW。平时想上GitHub、Facebook、YouTube，看看外面“资本主义的腐朽”，
-    
-    </summary>
-    
-      <category term="其他" scheme="https://wall-wxk.github.io/categories/other/"/>
-    
-    
-      <category term="gfw" scheme="https://wall-wxk.github.io/tags/gfw/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信面试题-获取元素的最终background-color</title>
-    <link href="https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/"/>
-    <id>https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/</id>
-    <published>2017-02-05T15:00:04.000Z</published>
-    <updated>2017-02-18T15:47:35.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、题目"><a href="#一、题目" class="headerlink" title="一、题目"></a>一、题目</h2><p> 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。</p>
+    <entry>
+      <title><![CDATA[微信面试题-获取元素的最终background-color]]></title>
+      <url>https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/</url>
+      <content type="html"><![CDATA[<h2 id="一、题目"><a href="#一、题目" class="headerlink" title="一、题目"></a>一、题目</h2><p> 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。</p>
 <h2 id="二、题目解析"><a href="#二、题目解析" class="headerlink" title="二、题目解析"></a>二、题目解析</h2><p> <strong>1.考察底层JavaScript基础</strong><br> 前端开发，日常最常接触的就是页面样式的编写。而摆脱jQuery等工具库，用原生js获取样式，是每个前端程序猿进阶阶段必须掌握的技能。</p>
 <p> <strong>2.考察面试者的思维缜密程度和开发经验</strong><br> 如果认为单单求元素计算后的样式，就有点too young了。页面的样式的复杂，永远是最虐心的。就算前端有多牛逼，一听到兼容IE6，论谁都会心塞😓。所以还要考虑特殊的情况：<code>display，opacity，visibility</code>的取值。</p>
 <h2 id="三、理论基础"><a href="#三、理论基础" class="headerlink" title="三、理论基础"></a>三、理论基础</h2><p> <strong>1. 内联样式</strong><br> 内联样式可以通过元素的style属性获取，如果style属性有background-color值，则可以直接获取出来 (暂不考虑!important) 。</p>
@@ -293,30 +266,28 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/4118463-ff57104dab5b90e1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p> 谢谢@<a href="http://www.jianshu.com/u/a3187c2973b1" target="_blank" rel="external">烟雨雾岚</a> 的提醒的新思路：canvas截图+Js获取图片某点颜色，这样可以完美解决所有的问题。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 面试题 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> CSS </tag>
+            
+            <tag> 微信 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、题目&quot;&gt;&lt;a href=&quot;#一、题目&quot; class=&quot;headerlink&quot; title=&quot;一、题目&quot;&gt;&lt;/a&gt;一、题目&lt;/h2&gt;&lt;p&gt; 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="面试题" scheme="https://wall-wxk.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="CSS" scheme="https://wall-wxk.github.io/tags/CSS/"/>
-    
-      <category term="微信" scheme="https://wall-wxk.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信面试题-LazyMan的深入解析和实现</title>
-    <link href="https://wall-wxk.github.io/2017/01/22/wx-lazyMan/"/>
-    <id>https://wall-wxk.github.io/2017/01/22/wx-lazyMan/</id>
-    <published>2017-01-22T14:56:36.000Z</published>
-    <updated>2017-02-18T15:47:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、题目介绍"><a href="#一、题目介绍" class="headerlink" title="一、题目介绍"></a>一、题目介绍</h2><p> 以下是我copy自网上的面试题原文：</p>
+    <entry>
+      <title><![CDATA[微信面试题-LazyMan的深入解析和实现]]></title>
+      <url>https://wall-wxk.github.io/2017/01/22/wx-lazyMan/</url>
+      <content type="html"><![CDATA[<h2 id="一、题目介绍"><a href="#一、题目介绍" class="headerlink" title="一、题目介绍"></a>一、题目介绍</h2><p> 以下是我copy自网上的面试题原文：</p>
 <blockquote>
 <p>实现一个LazyMan，可以按照以下方式调用:<br>LazyMan(“Hank”)输出:<br>Hi! This is Hank!<br> <br>LazyMan(“Hank”).sleep(10).eat(“dinner”)输出<br>Hi! This is Hank!<br>//等待10秒..<br>Wake up after 10<br>Eat dinner~<br> <br>LazyMan(“Hank”).eat(“dinner”).eat(“supper”)输出<br>Hi This is Hank!<br>Eat dinner~<br>Eat supper~<br> <br>LazyMan(“Hank”).sleepFirst(5).eat(“supper”)输出<br>//等待5秒<br>Wake up after 5<br>Hi This is Hank!<br>Eat supper<br> <br>以此类推。</p>
 </blockquote>
@@ -357,34 +328,30 @@
 <p> demo需要打开控制台，在控制台中调试代码。</p>
 <h2 id="七、番外"><a href="#七、番外" class="headerlink" title="七、番外"></a>七、番外</h2><p> 网上有人也实现了lazyMan，但是实现的方式我不是很喜欢和认同，但是也是一种思路，这里顺便贴出来给大伙看看。<br><a href="http://web.jobbole.com/89626/" target="_blank" rel="external">如何实现一个LazyMan</a>：<a href="http://web.jobbole.com/89626/" target="_blank" rel="external">http://web.jobbole.com/89626/</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> 面试题 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+            <tag> 微信 </tag>
+            
+            <tag> lazyMan </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、题目介绍&quot;&gt;&lt;a href=&quot;#一、题目介绍&quot; class=&quot;headerlink&quot; title=&quot;一、题目介绍&quot;&gt;&lt;/a&gt;一、题目介绍&lt;/h2&gt;&lt;p&gt; 以下是我copy自网上的面试题原文：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;实现一个LazyMan，可以
-    
-    </summary>
-    
-      <category term="面试题" scheme="https://wall-wxk.github.io/categories/%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
-    
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/tags/JavaScript/"/>
-    
-      <category term="微信" scheme="https://wall-wxk.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
-    
-      <category term="lazyMan" scheme="https://wall-wxk.github.io/tags/lazyMan/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>localStorage的黑科技-js和css缓存机制</title>
-    <link href="https://wall-wxk.github.io/2017/01/18/localStorage/"/>
-    <id>https://wall-wxk.github.io/2017/01/18/localStorage/</id>
-    <published>2017-01-18T12:30:36.000Z</published>
-    <updated>2017-02-18T15:27:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一、发现黑科技的起因"><a href="#一、发现黑科技的起因" class="headerlink" title="一、发现黑科技的起因"></a>一、发现黑科技的起因</h2><p> 今天在微信公众号看到一篇技术博文，想用印象笔记收藏，所以发送了文章链接到pc上。然后习惯性地打开控制台，看看源码，想了解下最近微信用了什么新技术。<br> 呵呵，以下勾起了我侦探的欲望。页面加载后的异常点就是只加载了一个js，如下图所示：</p>
+    <entry>
+      <title><![CDATA[localStorage的黑科技-js和css缓存机制]]></title>
+      <url>https://wall-wxk.github.io/2017/01/18/localStorage/</url>
+      <content type="html"><![CDATA[<h2 id="一、发现黑科技的起因"><a href="#一、发现黑科技的起因" class="headerlink" title="一、发现黑科技的起因"></a>一、发现黑科技的起因</h2><p> 今天在微信公众号看到一篇技术博文，想用印象笔记收藏，所以发送了文章链接到pc上。然后习惯性地打开控制台，看看源码，想了解下最近微信用了什么新技术。<br> 呵呵，以下勾起了我侦探的欲望。页面加载后的异常点就是只加载了一个js，如下图所示：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/4118463-b2ba6f7903ae5373.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p> 我很诧异，为什么已经开启了Disable cache，js只加载了一个，而且体积这么小。接着，我按住Ctrl+O进行资源文件查找，发现我被“忽悠”了。其实根本就不止一个js文件。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/4118463-270d5d850ce777c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
@@ -428,30 +395,28 @@
 <p>  <strong>3. 移动端可以做LS缓存。PC端做LS缓存，起到的优化作用不大。</strong></p>
 <h2 id="六、番外"><a href="#六、番外" class="headerlink" title="六、番外"></a>六、番外</h2><p> 有兴趣的童鞋，还可以看看知乎上大神们的讨论，<a href="https://www.zhihu.com/question/28467444" target="_blank" rel="external">静态资源（JS/CSS）存储在localStorage有什么缺点？为什么没有被广泛应用？ - 互联网 - 知乎</a><br> 另外，腾讯网的前端，在gitHub上有分享其<a href="https://mtjs.github.io/" target="_blank" rel="external">MT 模块管理框架</a>，可以看看具体的实现逻辑。<br> 最后，上一个栗子 —— 线上实例demo：<a href="http://scrat.io/" target="_blank" rel="external">webapp模块化开发体系</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> JavaScript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 微信 </tag>
+            
+            <tag> localStorage </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、发现黑科技的起因&quot;&gt;&lt;a href=&quot;#一、发现黑科技的起因&quot; class=&quot;headerlink&quot; title=&quot;一、发现黑科技的起因&quot;&gt;&lt;/a&gt;一、发现黑科技的起因&lt;/h2&gt;&lt;p&gt; 今天在微信公众号看到一篇技术博文，想用印象笔记收藏，所以发送了文章链接到p
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="微信" scheme="https://wall-wxk.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
-    
-      <category term="localStorage" scheme="https://wall-wxk.github.io/tags/localStorage/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>动态加载css方法实现和深入解析</title>
-    <link href="https://wall-wxk.github.io/2017/01/17/loadCss/"/>
-    <id>https://wall-wxk.github.io/2017/01/17/loadCss/</id>
-    <published>2017-01-17T14:40:54.000Z</published>
-    <updated>2017-02-19T03:09:56.000Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="一、方法引用来源和应用"><a href="#一、方法引用来源和应用" class="headerlink" title="一、方法引用来源和应用"></a>一、方法引用来源和应用</h3><p> 此动态加载css方法 loadCss，剥离自Sea.js，并做了进一步的优化（优化代码后续会进行分析）。<br> 因为公司项目需要用到懒加载来提高网站加载速度，所以将非首屏渲染必需的css文件进行动态加载操作。</p>
+    <entry>
+      <title><![CDATA[动态加载css方法实现和深入解析]]></title>
+      <url>https://wall-wxk.github.io/2017/01/17/loadCss/</url>
+      <content type="html"><![CDATA[<h3 id="一、方法引用来源和应用"><a href="#一、方法引用来源和应用" class="headerlink" title="一、方法引用来源和应用"></a>一、方法引用来源和应用</h3><p> 此动态加载css方法 loadCss，剥离自Sea.js，并做了进一步的优化（优化代码后续会进行分析）。<br> 因为公司项目需要用到懒加载来提高网站加载速度，所以将非首屏渲染必需的css文件进行动态加载操作。</p>
 <h3 id="二、优化后的完整代码"><a href="#二、优化后的完整代码" class="headerlink" title="二、优化后的完整代码"></a>二、优化后的完整代码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line">* @function 动态加载css文件</div><div class="line">* @param &#123;string&#125; options.url -- css资源路径</div><div class="line">* @param &#123;function&#125; options.callback -- 加载后回调函数</div><div class="line">* @param &#123;string&#125; options.id -- link标签id</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">loadCss</span>(<span class="params">options</span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> url = options.url,</div><div class="line">		callback = <span class="keyword">typeof</span> options.callback == <span class="string">"function"</span> ? options.callback : <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,</div><div class="line">		id = options.id,</div><div class="line">		node = <span class="built_in">document</span>.createElement(<span class="string">"link"</span>),</div><div class="line">		supportOnload = <span class="string">"onload"</span> <span class="keyword">in</span> node,</div><div class="line">		isOldWebKit = +navigator.userAgent.replace(<span class="regexp">/.*(?:AppleWebKit|AndroidWebKit)\/?(\d+).*/i</span>, <span class="string">"$1"</span>) &lt; <span class="number">536</span>, <span class="comment">// webkit旧内核做特殊处理</span></div><div class="line">		protectNum = <span class="number">300000</span>; <span class="comment">// 阈值10分钟，一秒钟执行pollCss 500次</span></div><div class="line">		</div><div class="line">	node.rel = <span class="string">"stylesheet"</span>;</div><div class="line">    node.type = <span class="string">"text/css"</span>;</div><div class="line">	node.href = url;</div><div class="line">	<span class="keyword">if</span>( <span class="keyword">typeof</span> id !== <span class="string">"undefined"</span> )&#123;</div><div class="line">		node.id = id;</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">document</span>.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(node);</div><div class="line">	</div><div class="line">	<span class="comment">// for Old WebKit and Old Firefox</span></div><div class="line">	<span class="keyword">if</span> (isOldWebKit || !supportOnload) &#123;</div><div class="line">		<span class="comment">// Begin after node insertion</span></div><div class="line">		setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			pollCss(node, callback, <span class="number">0</span>);</div><div class="line">		&#125;, <span class="number">1</span>);</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="keyword">if</span>(supportOnload)&#123;</div><div class="line">		node.onload = onload;</div><div class="line">		node.onerror = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="comment">// 加载失败(404)</span></div><div class="line">			onload();</div><div class="line">		&#125;</div><div class="line">	&#125;<span class="keyword">else</span>&#123;</div><div class="line">		node.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="keyword">if</span> (<span class="regexp">/loaded|complete/</span>.test(node.readyState)) &#123;</div><div class="line">				onload();</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">onload</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="comment">// 确保只跑一次下载操作</span></div><div class="line">		node.onload = node.onerror = node.onreadystatechange = <span class="literal">null</span>;</div><div class="line"></div><div class="line">		<span class="comment">// 清空node引用，在低版本IE，不清除会造成内存泄露</span></div><div class="line">		node = <span class="literal">null</span>;</div><div class="line"></div><div class="line">		callback();</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">// 循环判断css是否已加载成功</span></div><div class="line">	<span class="comment">/*</span></div><div class="line">	* @param node -- link节点</div><div class="line">	* @param callback -- 回调函数</div><div class="line">	* @param step -- 计步器，避免无限循环</div><div class="line">	*/</div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">pollCss</span>(<span class="params">node, callback, step</span>)</span>&#123;</div><div class="line">		<span class="keyword">var</span> sheet = node.sheet,</div><div class="line">			isLoaded;</div><div class="line">			</div><div class="line">		step += <span class="number">1</span>;</div><div class="line">		</div><div class="line">		<span class="comment">// 保护，大于10分钟，则不再轮询</span></div><div class="line">		<span class="keyword">if</span>(step &gt; protectNum)&#123;</div><div class="line">			isLoaded = <span class="literal">true</span>;</div><div class="line">			</div><div class="line">			<span class="comment">// 清空node引用</span></div><div class="line">			node = <span class="literal">null</span>;</div><div class="line">			</div><div class="line">			callback();</div><div class="line">			<span class="keyword">return</span>;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		<span class="keyword">if</span>(isOldWebKit)&#123;</div><div class="line">			<span class="comment">// for WebKit &lt; 536</span></div><div class="line">			<span class="keyword">if</span>(sheet)&#123;</div><div class="line">				isLoaded = <span class="literal">true</span>;</div><div class="line">			&#125;</div><div class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(sheet)&#123;</div><div class="line">			<span class="comment">// for Firefox &lt; 9.0</span></div><div class="line">			<span class="keyword">try</span>&#123;</div><div class="line">				<span class="keyword">if</span>(sheet.cssRules)&#123;</div><div class="line">					isLoaded = <span class="literal">true</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;<span class="keyword">catch</span>(ex)&#123;</div><div class="line">				<span class="comment">// 火狐特殊版本，通过特定值获知是否下载成功</span></div><div class="line">				<span class="comment">// The value of `ex.name` is changed from "NS_ERROR_DOM_SECURITY_ERR"</span></div><div class="line">				<span class="comment">// to "SecurityError" since Firefox 13.0. But Firefox is less than 9.0</span></div><div class="line">				<span class="comment">// in here, So it is ok to just rely on "NS_ERROR_DOM_SECURITY_ERR"</span></div><div class="line">				<span class="keyword">if</span>(ex.name === <span class="string">"NS_ERROR_DOM_SECURITY_ERR"</span>)&#123;</div><div class="line">					isLoaded = <span class="literal">true</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="keyword">if</span>(isLoaded)&#123;</div><div class="line">				<span class="comment">// 延迟20ms是为了给下载的样式留够渲染的时间</span></div><div class="line">				callback();</div><div class="line">			&#125;<span class="keyword">else</span>&#123;</div><div class="line">				pollCss(node, callback, step);</div><div class="line">			&#125;</div><div class="line">		&#125;, <span class="number">20</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="三、解析代码"><a href="#三、解析代码" class="headerlink" title="三、解析代码"></a>三、解析代码</h3><h5 id="一、参数"><a href="#一、参数" class="headerlink" title="一、参数"></a>一、参数</h5><p> 本方法支持三个参数，可进行扩展。</p>
 <p><strong>1.1 opations.url</strong></p>
@@ -478,22 +443,26 @@
 <p> <strong>5.3 不支持onload方法浏览器的处理</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(supportOnload)&#123;</div><div class="line">	<span class="comment">// 代码...</span></div><div class="line">&#125;<span class="keyword">else</span>&#123;</div><div class="line">    node.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (<span class="regexp">/loaded|complete/</span>.test(node.readyState)) &#123;</div><div class="line">            onload();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <h3 id="四、后记"><a href="#四、后记" class="headerlink" title="四、后记"></a>四、后记</h3><p> 选择剥离Sea.js方法进行改造的原因：因为该js库使用人群很广泛，如果出问题，作者也会及时修复。所以，以此代码为蓝本进行改造契合公司的用户群，避免大面积出现问题。<br> 在产品上应用该方法后，到目前为止，未有客户反馈样式异常问题。所以，看本文章的程序猿们，可以放心使用。<br> ps：公司用户群有1千多万的用户量，涉及大大小小繁杂的浏览器，从IE6到chrome都有。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> JavaScript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> CSS </tag>
+            
+            <tag> loadCss </tag>
+            
+            <tag> Sea.js </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h3 id=&quot;一、方法引用来源和应用&quot;&gt;&lt;a href=&quot;#一、方法引用来源和应用&quot; class=&quot;headerlink&quot; title=&quot;一、方法引用来源和应用&quot;&gt;&lt;/a&gt;一、方法引用来源和应用&lt;/h3&gt;&lt;p&gt; 此动态加载css方法 loadCss，剥离自Sea.js，并做了进
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
-    
-    
-      <category term="CSS" scheme="https://wall-wxk.github.io/tags/CSS/"/>
-    
-      <category term="loadCss" scheme="https://wall-wxk.github.io/tags/loadCss/"/>
-    
-      <category term="Sea.js" scheme="https://wall-wxk.github.io/tags/Sea-js/"/>
-    
-  </entry>
   
-</feed>
+  
+</search>
