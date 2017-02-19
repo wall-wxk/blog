@@ -542,7 +542,7 @@
     <link href="https://wall-wxk.github.io/2017/01/09/killIE/"/>
     <id>https://wall-wxk.github.io/2017/01/09/killIE/</id>
     <published>2017-01-09T13:08:01.000Z</published>
-    <updated>2017-02-19T12:32:21.000Z</updated>
+    <updated>2017-02-19T12:33:57.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="一、科普IE条件注释"><a href="#一、科普IE条件注释" class="headerlink" title="一、科普IE条件注释"></a>一、科普IE条件注释</h3><blockquote>
 <p>IE条件注释功能是条件注释是<strong>IE特有</strong>的一种功能，能对IE系列产品进行单独的XHTML代码处理，注意，主要是针对XHTML,而非CSS。条件注释功能非常强大，可以<strong>进行true和false判断</strong>。</p>
@@ -582,7 +582,9 @@
       <category term="JavaScript" scheme="https://wall-wxk.github.io/categories/JavaScript/"/>
     
     
-      <category term="kill IE, 嗅探" scheme="https://wall-wxk.github.io/tags/kill-IE-%E5%97%85%E6%8E%A2/"/>
+      <category term="kill IE" scheme="https://wall-wxk.github.io/tags/kill-IE/"/>
+    
+      <category term="嗅探" scheme="https://wall-wxk.github.io/tags/%E5%97%85%E6%8E%A2/"/>
     
   </entry>
   
