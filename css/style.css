@@ -219,8 +219,9 @@ div {
     line-height: 1.77;
     color: #444;
     padding-top: 15px;
-    text-align: justify;
-    text-justify: distribute;
+    /*text-align: justify;
+        text-justify: distribute;*/
+    text-align: left;
     word-break: normal; }
     .post .post-content h2 {
       margin: 1.4em 0 1.1em;
@@ -378,22 +379,25 @@ blockquote, .stressed {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 2.5em 0;
-  padding: 0 0 0 50px;
+  padding: 0 10px 0 10px;
   color: #555;
-  border-left: none; }
+  border-left: 6px solid #ddd;
+  background: #f7f8f8; }
 
-blockquote:before, .stressed-quote:before {
-  content: "\201C";
-  display: block;
-  font-family: times;
-  font-style: normal;
-  font-size: 48px;
-  color: #444;
-  font-weight: bold;
-  line-height: 30px;
-  margin-left: -50px;
-  position: absolute; }
-
+/*
+blockquote:before,.stressed-quote:before {
+    content: "\201C";
+    display: block;
+    font-family: times;
+    font-style: normal;
+    font-size: 48px;
+    color: #444;
+    font-weight: bold;
+    line-height: 30px;
+    margin-left: -50px;
+    position: absolute;
+}
+*/
 strong, b, em {
   font-weight: bold; }
 
