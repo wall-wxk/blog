@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wall-wxk.github.io/"/>
-  <updated>2017-02-27T13:46:31.000Z</updated>
+  <updated>2017-02-27T13:51:52.000Z</updated>
   <id>https://wall-wxk.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>两个变量交换（不适用临时变量）</title>
+    <title>JavaScript两个变量交换值（不使用临时变量）</title>
     <link href="https://wall-wxk.github.io/2017/02/27/exchangeValue/"/>
     <id>https://wall-wxk.github.io/2017/02/27/exchangeValue/</id>
     <published>2017-02-27T13:04:08.000Z</published>
-    <updated>2017-02-27T13:46:31.000Z</updated>
+    <updated>2017-02-27T13:51:52.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h1><p> 本文主要描述，如何不使用中间值，将两个变量的值进行交换。</p>
 <h1 id="一、普通做法"><a href="#一、普通做法" class="headerlink" title="一、普通做法"></a>一、普通做法</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>,</div><div class="line">	b = <span class="number">2</span>,</div><div class="line">	tmp;</div><div class="line"></div><div class="line">tmp = a;</div><div class="line">a = b;</div><div class="line">b = tmp;</div></pre></td></tr></table></figure>
