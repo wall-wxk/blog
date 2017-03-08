@@ -215,9 +215,9 @@
         
         <tags>
             
-            <tag> JavaScript </tag>
-            
             <tag> IIFE </tag>
+            
+            <tag> JavaScript </tag>
             
         </tags>
         
@@ -274,9 +274,9 @@
     </entry>
     
     <entry>
-      <title><![CDATA[微信面试题-获取元素的最终background-color]]></title>
+      <title><![CDATA[获取元素的最终background-color]]></title>
       <url>https://wall-wxk.github.io/2017/02/05/wx-backgroundColor/</url>
-      <content type="html"><![CDATA[<h2 id="一、题目"><a href="#一、题目" class="headerlink" title="一、题目"></a>一、题目</h2><p> 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。</p>
+      <content type="html"><![CDATA[<h2 id="一、题目"><a href="#一、题目" class="headerlink" title="一、题目"></a>一、题目</h2><p> 用JS代码求出页面上一个元素的最终的background-color，不考虑IE浏览器，不考虑元素float情况。（题目copy自网上）</p>
 <h2 id="二、题目解析"><a href="#二、题目解析" class="headerlink" title="二、题目解析"></a>二、题目解析</h2><p> <strong>1.考察底层JavaScript基础</strong><br> 前端开发，日常最常接触的就是页面样式的编写。而摆脱jQuery等工具库，用原生js获取样式，是每个前端程序猿进阶阶段必须掌握的技能。</p>
 <p> <strong>2.考察面试者的思维缜密程度和开发经验</strong><br> 如果认为单单求元素计算后的样式，就有点too young了。页面的样式的复杂，永远是最虐心的。就算前端有多牛逼，一听到兼容IE6，论谁都会心塞😓。所以还要考虑特殊的情况：<code>display，opacity，visibility</code>的取值。</p>
 <h2 id="三、理论基础"><a href="#三、理论基础" class="headerlink" title="三、理论基础"></a>三、理论基础</h2><p> <strong>1. 内联样式</strong><br> 内联样式可以通过元素的style属性获取，如果style属性有background-color值，则可以直接获取出来 (暂不考虑!important) 。</p>
@@ -309,14 +309,12 @@
             
             <tag> CSS </tag>
             
-            <tag> 微信 </tag>
-            
         </tags>
         
     </entry>
     
     <entry>
-      <title><![CDATA[微信面试题-LazyMan的深入解析和实现]]></title>
+      <title><![CDATA[LazyMan的深入解析和实现]]></title>
       <url>https://wall-wxk.github.io/2017/01/22/wx-lazyMan/</url>
       <content type="html"><![CDATA[<h2 id="一、题目介绍"><a href="#一、题目介绍" class="headerlink" title="一、题目介绍"></a>一、题目介绍</h2><p> 以下是我copy自网上的面试题原文：</p>
 <blockquote>
@@ -368,8 +366,6 @@
         
         
         <tags>
-            
-            <tag> 微信 </tag>
             
             <tag> JavaScript </tag>
             
