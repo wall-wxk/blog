@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wall-wxk.github.io/"/>
-  <updated>2017-02-27T13:51:52.000Z</updated>
+  <updated>2017-03-08T12:33:12.000Z</updated>
   <id>https://wall-wxk.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="https://wall-wxk.github.io/2017/02/27/exchangeValue/"/>
     <id>https://wall-wxk.github.io/2017/02/27/exchangeValue/</id>
     <published>2017-02-27T13:04:08.000Z</published>
-    <updated>2017-02-27T13:51:52.000Z</updated>
+    <updated>2017-03-08T12:33:12.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h1><p> 本文主要描述，如何不使用中间值，将两个变量的值进行交换。</p>
+    <content type="html"><![CDATA[<h1 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h1><p> 本文主要描述，如何不使用中间值，将两个变量的值进行交换。<br> 前三种只适用于number类型的数值交换，第四和第五种适合其他类型。</p>
 <h1 id="一、普通做法"><a href="#一、普通做法" class="headerlink" title="一、普通做法"></a>一、普通做法</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>,</div><div class="line">	b = <span class="number">2</span>,</div><div class="line">	tmp;</div><div class="line"></div><div class="line">tmp = a;</div><div class="line">a = b;</div><div class="line">b = tmp;</div></pre></td></tr></table></figure>
 <p> 普通的做法就是声明多一个临时变量<code>tmp</code>，进行数据交换过程中的缓存。这样的做法直观，易懂。但是，会增加内存的使用。</p>
 <h1 id="二、算术运算"><a href="#二、算术运算" class="headerlink" title="二、算术运算"></a>二、算术运算</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>,</div><div class="line">	b = <span class="number">2</span>;</div><div class="line"></div><div class="line">a = a + b; <span class="comment">// a = 3, b = 2</span></div><div class="line">b = a - b; <span class="comment">// a = 3, b = 1</span></div><div class="line">a = a - b; <span class="comment">// a = 2, b = 1</span></div></pre></td></tr></table></figure>
@@ -31,12 +31,12 @@
 <p> 本题巧用位运算的技巧，利用 <code>a ^ b ^ b == a</code> 的特点，进行数值交换，避免了使用算术运算带来的弊端，不会发生溢出问题。</p>
 <h1 id="四、ES6的解构"><a href="#四、ES6的解构" class="headerlink" title="四、ES6的解构"></a>四、ES6的解构</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> a = <span class="number">1</span>,</div><div class="line">	b = <span class="number">2</span>;</div><div class="line"></div><div class="line">[a, b] = [b, a];</div></pre></td></tr></table></figure>
 <p> 用解构的语法特性，一次性解决，简单暴力，哈哈哈~<br> <strong>更重要的一点：</strong>解构语法还适用于其他类型的变量进行互换。所以，用解构可以很easy地进行互换。</p>
+<h1 id="五、利用数组特性进行交换"><a href="#五、利用数组特性进行交换" class="headerlink" title="五、利用数组特性进行交换"></a>五、利用数组特性进行交换</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">1</span>,</div><div class="line">	b = <span class="number">2</span>;</div><div class="line"></div><div class="line">a = [a, b];</div><div class="line">b = a[<span class="number">0</span>];</div><div class="line">a = a[<span class="number">1</span>];</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h1&gt;&lt;p&gt; 本文主要描述，如何不使用中间值，将两个变量的值进行交换。&lt;/p&gt;
-&lt;h1 id=&quot;一、普通做法&quot;&gt;&lt;a href=&quot;#一、普通做法&quot; cl
+      &lt;h1 id=&quot;概要&quot;&gt;&lt;a href=&quot;#概要&quot; class=&quot;headerlink&quot; title=&quot;概要&quot;&gt;&lt;/a&gt;概要&lt;/h1&gt;&lt;p&gt; 本文主要描述，如何不使用中间值，将两个变量的值进行交换。&lt;br&gt; 前三种只适用于number类型的数值交换，第四和第五种适合其他类型。&lt;/
     
     </summary>
     
