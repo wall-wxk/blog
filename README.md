@@ -1,11 +1,13 @@
 # 记录开发中的技术点滴
 
 ---
+> 如果我到技术博文有帮助到你，麻烦点下 **「Star」** 支持下我  
+> 想关注最新发布的文章，可以点击 **「Watch」** 收听 
+---
 
-> - 当前仓库改为issue方式继续记录博文，欢迎star、watch
+> - 当前仓库改为issue方式继续记录博文，欢迎star、watch  
 > - hexo博客已迁移到阿里云服务器，[地址](http://wangxiaokai.vip)：`http://wangxiaokai.vip`
 
----
 
 
 ## Article
