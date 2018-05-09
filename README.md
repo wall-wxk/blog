@@ -5,8 +5,8 @@
 > 想关注最新发布的文章，可以点击 **「Watch」** 收听 
 ---
 
-> - 当前仓库改为issue方式继续记录博文，欢迎star、watch  
-> - hexo博客已迁移到阿里云服务器，[地址](http://wangxiaokai.vip)：`http://wangxiaokai.vip`
+ - 当前仓库改为issue方式继续记录博文，欢迎star、watch  
+ - hexo博客已迁移到阿里云服务器，[地址](http://wangxiaokai.vip)：`http://wangxiaokai.vip`
 
 
 
