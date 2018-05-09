@@ -17,6 +17,8 @@
 - node.js
 - 工程化
 - 工具
+- lodash源码解读
+    - [模块化的基础——IIFE](https://github.com/wall-wxk/the-road-to-lodash/issues/1)
 
 ## License
 CC BY-NC-SA 3.0
