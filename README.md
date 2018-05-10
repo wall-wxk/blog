@@ -17,8 +17,11 @@
     - [尤达表达式](https://github.com/wall-wxk/blog/issues/2)
 - Git
 - node.js
+- nginx
+    - [使用nginx缓存服务器上的静态文件](https://github.com/wall-wxk/blog/issues/3)
 - 工程化
 - 工具
+    
 - lodash源码解读
     - [模块化的基础——IIFE](https://github.com/wall-wxk/the-road-to-lodash/issues/1)
 
