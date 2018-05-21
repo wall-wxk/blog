@@ -15,6 +15,7 @@
 - 前端
     - [SEO优化-robots.txt解读](https://github.com/wall-wxk/blog/issues/1)
     - [尤达表达式](https://github.com/wall-wxk/blog/issues/2)
+    - [Android、IOS文字居中偏离的解决方案](https://github.com/wall-wxk/blog/issues/4)
     - [Cookie防篡改机制](https://github.com/wall-wxk/blog/issues/5)
 - Git
 - node.js
