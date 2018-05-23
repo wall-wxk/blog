@@ -18,6 +18,7 @@
     - [Android、IOS文字居中偏离的解决方案](https://github.com/wall-wxk/blog/issues/4)
     - [Cookie防篡改机制](https://github.com/wall-wxk/blog/issues/5)
 - Git
+    - [Git打标签与版本控制规范](https://github.com/wall-wxk/blog/issues/6)
 - node.js
 - nginx
     - [使用nginx缓存服务器上的静态文件](https://github.com/wall-wxk/blog/issues/3)
