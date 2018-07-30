@@ -19,6 +19,7 @@
     - [Cookie防篡改机制](https://github.com/wall-wxk/blog/issues/5)
     - [优雅的类写法](https://github.com/wall-wxk/blog/issues/9)
     - [柯里化与反柯里化](https://github.com/wall-wxk/blog/issues/10)
+    - [类的继承](https://github.com/wall-wxk/blog/issues/12)
 - 后端
     - [shell妙用 —— 发post请求刷新CDN缓存](https://github.com/wall-wxk/blog/issues/11)
 - Git
