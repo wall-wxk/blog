@@ -22,6 +22,8 @@
     - [类的继承](https://github.com/wall-wxk/blog/issues/12)
 - 后端
     - [shell妙用 —— 发post请求刷新CDN缓存](https://github.com/wall-wxk/blog/issues/11)
+- 数据结构+算法
+    - [堆栈的应用——用JavaScript描述数据结构](https://github.com/wall-wxk/blog/issues/13)
 - Git
     - [Git打标签与版本控制规范](https://github.com/wall-wxk/blog/issues/6)
 - node.js
