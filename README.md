@@ -36,6 +36,7 @@
     
 - lodash源码解读
     - [模块化的基础——IIFE](https://github.com/wall-wxk/the-road-to-lodash/issues/1)
+    - [惰性求值](https://github.com/wall-wxk/blog/issues/14)
 
 ## License
 CC-BY-NC-SA 3.0
