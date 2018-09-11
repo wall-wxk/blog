@@ -20,6 +20,7 @@
     - [优雅的类写法](https://github.com/wall-wxk/blog/issues/9)
     - [柯里化与反柯里化](https://github.com/wall-wxk/blog/issues/10)
     - [类的继承](https://github.com/wall-wxk/blog/issues/12)
+    - [React router动态加载组件-适配器模式的应用](https://github.com/wall-wxk/blog/issues/15)
 - 后端
     - [shell妙用 —— 发post请求刷新CDN缓存](https://github.com/wall-wxk/blog/issues/11)
 - 数据结构+算法
