@@ -31,6 +31,8 @@
 - nginx
     - [使用nginx缓存服务器上的静态文件](https://github.com/wall-wxk/blog/issues/3)
     - [防止域名被恶意解析](https://github.com/wall-wxk/blog/issues/16)
+- React
+    - [生产模式下禁止React Developer Tools、Redux DevTools的使用](https://github.com/wall-wxk/blog/issues/17)
 - 工程化
     - [个人站点升级持续集成，自动构建和部署](https://github.com/wall-wxk/blog/issues/7)
 - 工具
