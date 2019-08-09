@@ -37,6 +37,7 @@
     - [个人站点升级持续集成，自动构建和部署](https://github.com/wall-wxk/blog/issues/7)
 - 工具
     - [webpack项目轻松混用css module](https://github.com/wall-wxk/blog/issues/8)
+    - [源码解析-url状态检测神器ping-url](https://github.com/wall-wxk/blog/issues/18)
     
 - lodash源码解读
     - [模块化的基础——IIFE](https://github.com/wall-wxk/the-road-to-lodash/issues/1)
