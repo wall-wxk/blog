@@ -38,6 +38,7 @@
 - 工具
     - [webpack项目轻松混用css module](https://github.com/wall-wxk/blog/issues/8)
     - [源码解析-url状态检测神器ping-url](https://github.com/wall-wxk/blog/issues/18)
+    - [node命令行工具之实现项目工程自动初始化的标准流程](https://github.com/wall-wxk/blog/issues/19)
     
 - lodash源码解读
     - [模块化的基础——IIFE](https://github.com/wall-wxk/the-road-to-lodash/issues/1)
